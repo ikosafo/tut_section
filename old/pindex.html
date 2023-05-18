@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Flexbox Example</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+
+        .logo {
+            width: 150px;
+            height: auto;
+        }
+
+        nav {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+
+        ul {
+            list-style: none;
+            display: flex;
+        }
+
+        li {
+            margin-left: 20px;
+        }
+
+        .hamburger {
+            display: none;
+        }
+
+        @media only screen and (max-width: 768px) {
+            .menu {
+                display: none;
+            }
+
+            .hamburger {
+                display: block;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="path/to/logo.png" alt="Logo">
+
+        <nav>
+            <ul class="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+
+            <div class="hamburger">&#9776;</div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Add content here -->
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,62 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    width: 84%;
+    margin: 0 auto
+}
+
+img {
+    width: 150px;
+}
+
+.nav {
+    display: none;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    height: 74px;
+    align-items: center;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Desktop styling */
+@media (min-width:900px) {
+    .container {
+        width: 91%;
+    }
+
+    img {
+        width: 200px;
+    }
+
+    .header .container {
+        height: 100px;
+    }
+
+    .nav-menu {
+        display: none;
+    }
+
+    .nav {
+        display: block;
+    }
+}
+
+.nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.nav li:not(:last-child) {
+    margin-right: 23px;
+}

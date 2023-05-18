@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <style>
+        /* Contact Us */
+        .contact {
+            padding: 62px 0;
+            background-color: #EEF4F8;
+            color: #333333;
+        }
+
+        .contact h2 {
+            margin-bottom: 42px;
+            font-size: 26px;
+        }
+
+        .contact h2+p {
+            font-size: 13px;
+            line-height: 2;
+        }
+
+        @media (min-width: 900px) {
+            .contact {
+                padding: 0;
+                background: none;
+            }
+
+            .contact .container {
+                display: flex;
+                justify-content: space-between;
+                padding: 96px 9% 62px;
+                box-sizing: border-box;
+                background-color: #EEF4F8;
+            }
+
+            .contact .text {
+                flex: 0 0 auto;
+            }
+
+            .contact .form {
+                flex: 1 1 auto;
+                max-width: 457px;
+                margin-left: 1em;
+                margin-top: 0;
+            }
+
+            .contact h2 {
+                font-size: 36px;
+            }
+
+            .contact h2+p {
+                font-size: 15px;
+                line-height: 1.73;
+            }
+        }
+
+        /* Contact Us Form */
+        .form {
+            margin-top: 46px;
+        }
+
+        .form input[type="text"],
+        .form input[type="email"],
+        .form textarea {
+            width: 100%;
+            margin-bottom: 17px;
+            padding: 14px 20px 15px;
+            border: solid 1px #CDD6DD;
+            box-sizing: border-box;
+            border-radius: 0;
+            -webkit-appearance: none;
+            color: #333333;
+            font-family: 'Roboto', sans-serif;
+            font-size: 16px;
+        }
+
+        .form ::placeholder {
+            color: #CDD6DD;
+        }
+
+        .form textarea {
+            height: 150px;
+        }
+
+        .form .btn {
+            width: 100%;
+            margin: 0;
+            border: none;
+            background-color: #2E5180;
+            color: #ffffff;
+            font-family: 'Roboto', sans-serif;
+            cursor: pointer;
+            -webkit-appearance: none;
+        }
+
+        @media (min-width: 900px) {
+            .form .btn {
+                width: 272px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section class="contact">
+        <div class="container">
+            <div class="text">
+                <h2>Contact Us</h2>
+                <p>If you have any specific concerns, please feel free to contact us.</p>
+                <p>We welcome any comments, suggestions, feedback, questions, or requests you have.</p>
+            </div>
+            <form class="form">
+                <p>
+                    <label>
+                        <span class="sr-only">Name</span> </label>
+                    <input type="text" name="name" placeholder="Name">
+
+                </p>
+                <p>
+                    <label>
+                        <span class="sr-only">Email</span>
+                        <input type="email" name="email" placeholder="Email">
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <span class="sr-only">Message</span>
+                        <textarea name="msg" placeholder="Message"></textarea>
+                    </label>
+                </p>
+
+                <p>
+                    <input type="submit" value="SUBMIT" class="btn">
+                </p>
+            </form>
+
+        </div>
+    </section>
+</body>
+
+</html>

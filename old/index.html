@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- This is the head section -->
+    <title>Azubi Africa | Tailor Made Cloud, Front-End Developer and Data Analytics Courses</title>
+    <meta name="author" content="Isaac Osafo">
+    <meta name="keywords" content="HTML, CSS, javaScript, React, Web Development">
+    <meta name="description" content="We provide certified Microsoft and AWS Data and Cloud cert courses">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta http-equiv="refresh" content="5, url=https://azubiafrica.org"> -->
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="img/logo.png" type="image/png">
+    <script src="https://kit.fontawesome.com/edc08da3a3.js" crossorigin="anonymous"></script>
+
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .hero {
+            height: 500px;
+            background-image: url('./img/hero.jpeg');
+            background-position: center;
+            background-size: cover;
+            display: flex;
+        }
+
+        .hero .headline {
+            flex: auto;
+            align-self: flex-end;
+            background-color: rgb(255, 255, 255, 0.8);
+            padding: 33px 0;
+        }
+
+        h3 {
+            color: #2E5180;
+            text-align: center;
+            font-size: 10px;
+        }
+
+        .container p {
+            color: #000000;
+            font-weight: 100;
+            font-size: 15px;
+            text-align: center;
+        }
+
+        @media (min-width:900px) {
+            h3 {
+                font-size: 20px;
+            }
+
+            .container p {
+                font-size: 18px;
+            }
+
+            .hero {
+                height: 700px;
+            }
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="site_logo">
+                <img src="/img/logo.png" alt="Azubi Africa logo">
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#"><span class="conbtn">Contact Us</span></a></li>
+                </ul>
+            </nav>
+            <div class="nav-menu">
+                <i class="fa fa-bars"></i>
+                <span class="sr-only">MENU</span>
+            </div>
+        </div>
+    </header>
+    <section class="hero">
+        <div class="headline">
+            <div class="container">
+                <h3>Earn yourself the Tech career that you deserve</h3>
+                <p>More than 23,000 job openings exist for cloud<br /> developers and data analysts!</p>
+            </div>
+        </div>
+    </section>
+
+
+</body>
+
+</html>
